@@ -34,7 +34,10 @@ p {
     font-size: 14px;
     padding: 1em 0;
 }
-
+.author, .fa-star {
+    font-weight: 700;
+    color: #fff;
+}
 p, .socialmedia-icon {
     color: #dedede;
 }
@@ -47,8 +50,7 @@ a {
     text-decoration: none;
 }
 
-h1, .logo-link,
-.lead, .custom-button{
+h1, .logo-link, .custom-button{
     text-transform: uppercase;
 }
 
@@ -62,8 +64,9 @@ h1, .logo-link,
 
 button {
     border: none;
-    background-color: #BFE17E;
-    font-weight: 500;
+    background-color: #d4eb51;
+    font-weight: 700;
+    border-radius: 0.2em;
 }
 
 /* Top Header - Navbar Style */
@@ -79,8 +82,12 @@ button {
     align-items: center;
 }
 
+.navigation {
+    gap: 5em;
+}
+
 .nav-item {
-    padding: 1em 1.5em;
+    padding: 1em 0;
 }
 
 /* Hero style */
@@ -133,6 +140,10 @@ button {
     align-items: center;
     gap: 3em;
     padding: 2em 0;
+    width: 100%;
+}
+.row-box {
+    width: 33.333333%;
 }
 
 .icon-img {
@@ -189,7 +200,7 @@ button {
     color: #fff;
 }
 
-/* The Lab style */
+/* Testimonials style */
 #testimonials{
     background-color: #1b1b1b;
     margin-top: -2%;
@@ -210,7 +221,6 @@ button {
     flex-direction: row;
     gap: 3em;
     width: 100%;
-
 }
 
 .slide {
@@ -238,4 +248,83 @@ button {
 
 .credit {
     opacity: 0.7;
+}
+
+.button-mobile, .project-header-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .button-mobile, .project-header-mobile {
+    display: block;
+}
+    .navigation, .project-content {
+        display: none;
+    }
+
+    #hero {
+        padding: 5em 0;
+    }
+  .hero-container, .slides-container {
+        flex-direction: column;
+    }
+
+    #testimonials {
+        padding: 0 0 2em 0;
+        margin-top: -1.5%;
+    }
+
+.contact-button {
+    width: 150px;
+    padding: 1em;
+}
+.hero-right {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2em 0 0 0;
+    }
+
+    .section-row-container {
+        flex-direction: column;
+    }
+    .row-box {
+        width: 100%;
+    }
+
+    .projects-container {
+    padding: 1em 0;
+}
+    .project-media {
+        padding: 1em 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .button-mobile {
+        margin: auto;
+    }
+    .project-media .lead {
+        font-size: 2.5em;
+        font-weight: 700;
+        opacity: 0.3;
+        padding: 0 0;
+        width: 100%;
+    }
+    .transition-container {
+        margin-top: -3%;
+    }
+    .slides {
+        padding: 0;
+    }
 }
