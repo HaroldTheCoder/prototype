@@ -4,7 +4,7 @@
     padding: 0;
 }
 #main-navbar, .section-wrapper {
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 /* General styles - Fonts, Colors, ect. */
@@ -64,11 +64,12 @@ button {
     border: none;
     background-color: #BFE17E;
     font-weight: 500;
+    margin-top: 1%;
 }
 
 /* Top Header - Navbar Style */
 #main-header {
-    padding: 1em 0;
+    padding: 1em 2em;
     background-color: #131313;
     border-bottom: 1px solid #252525;
 }
@@ -85,8 +86,19 @@ button {
 
 /* Hero style */
 #hero {
-    padding: 5em 0;
+    padding: 0;
     background-color: #131313;
+    
+}
+#hero .section-wrapper {
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+    padding: 7em 2em;
+}
+.section-wrapper {
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+    padding: 5em 2em;
 }
 .hero-container {
     display: flex;
@@ -120,7 +132,6 @@ button {
 /* About style */
 #about {
     background-color: #1b1b1b;
-    padding: 3em 0;
     text-align: center;
 }
 .section-header {
@@ -142,7 +153,6 @@ button {
 /* Projects section */
 #projects {
     background-color: #fff;
-    padding: 5em 0;
 }
 
 #projects header {
@@ -178,11 +188,15 @@ button {
 .projects-img {
     width: 100%;
 }
-
+#projects .section-wrapper {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
 .section-button {
     margin: 2em 0 0;
     padding: 1em;
     background-color: #131313;
+    box-shadow: 0px 5px 5px #dedede;
 }
 
 .section-button a {
@@ -193,7 +207,7 @@ button {
 #testimonials{
     background-color: #1b1b1b;
     margin-top: -2%;
-    padding: 0 0 5em;
+   
 }
 
 .transition-img {
@@ -222,7 +236,12 @@ button {
 /* Contact style */
 #contact {
     background-color: #131313;
-    padding: 5em;
+}
+
+#contact .section-wrapper {
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+    padding: 7em 2em;
 }
 
 #contact h2 {
