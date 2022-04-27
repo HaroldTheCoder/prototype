@@ -7,12 +7,12 @@
     <title>JR Web-Studio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="page-container" data-aos="fade-up" data-aos-duration="800">
+    <div id="page-container">
         <!-- Top Header -->
         <header id="main-header">
             <nav id="main-navbar">
@@ -24,7 +24,7 @@
                     <div class="navigation-wrapper">
                         <ul class="navigation">
                             <li class="nav-item"><a href="" class="nav-link">Work</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">Profile</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">The Lab</a></li>
                             <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
@@ -107,7 +107,9 @@
                 </div>
             </section>
 
-             
+             <div class="transition-container">
+                <img src="images/faded-top.png" alt="" class="transition-img">
+            </div>
 
             <section id="projects">
                 <div class="section-wrapper">
@@ -116,7 +118,7 @@
                         <p class="lead">A selection of my most recent work</p>
                     </header>
 
-                    <div class="section-row-container projects-container" data-aos="fade-up" data-aos-duration="800">
+                    <div class="section-row-container projects-container" data-aos="fade-up" data-aos-duration="600">
                         <div class="project-content">
                             <p class="lead">O1</p>
                             <h3>DoorDash Landingpage</h3>
@@ -142,7 +144,7 @@
                         </div>
                     </div>
 
-                    <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="800"> 
+                    <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="600">
                         <div class="project-content">
                             <p class="lead">O2</p>
                             <h3>WonderHomes</h3>
@@ -166,7 +168,7 @@
                         </div>
                     </div>
 
-                    <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="800">
+                    <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="600">
                         <div class="project-content">
                             <p class="lead">O3</p>
                             <h3>Drone Intelligence Agency</h3>
@@ -192,14 +194,17 @@
                 </div>
             </section>
             
-        
+            <div class="transition-container">
+                <img src="images/faded-bottom.png" alt="" class="transition-img">
+            </div>
+
             <section id="testimonials">
-                <div class="section-wrapper">
+        
                 <header class="section-header">
                     <h2>Happy Clients</h2>
                     <p class="lead">Kind words from my clients</p>
                 </header>
-                <div class="review-container">  
+                <div class="review-container section-wrapper">  
                     <div class="review-slider">
                         <div class="slides-container">
 
@@ -247,7 +252,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </section>
 
             <section id="contact">
@@ -265,8 +269,9 @@
 
         </main>
 </div>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init();</script>
+<script> AOS.init();</script>
 <script src="https://kit.fontawesome.com/69a0798591.js" crossorigin="anonymous"></script>
 </body>
 </html>
