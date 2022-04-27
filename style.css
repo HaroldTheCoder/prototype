@@ -255,7 +255,9 @@ button {
 }
 
 @media screen and (max-width: 400px) {
-
+    #main-navbar, .section-wrapper {
+    width: 80%;
+}
     h1 {
         font-size: 2.5em;
     }
