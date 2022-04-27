@@ -70,6 +70,7 @@ button {
 #main-header {
     padding: 1em 0;
     background-color: #131313;
+    border-bottom: 1px solid #252525;
 }
 
 .nav-container, .navigation{
@@ -189,22 +190,52 @@ button {
 }
 
 /* The Lab style */
-#the-lab {
-    background: linear-gradient(#BFE17E, #BFE17E), url(images/keyboard-bg.png) no-repeat bottom left;
-    background-size: cover;
+#testimonials{
+    background-color: #1b1b1b;
     margin-top: -2%;
-    text-align: center;
+    padding: 0 0 5em;
 }
-#the-lab h2, #the-lab p {
-    color: #131313;
-}
+
 .transition-img {
     width: 100%;
     height: 150px;
 }
+.review-container {
+    padding: 3em 0;
+}
+.slides-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 3em;
+    width: 100%;
 
-#the-lab {
-    padding: 0 0 5em;
+}
 
-    
+.slide {
+    border-radius: 0.2em;
+    padding: 1em;
+   
+}
+
+/* Contact style */
+#contact {
+    background-color: #131313;
+    padding: 5em;
+}
+
+#contact h2 {
+    font-size: 3em;
+}
+
+#main-footer {
+    background-color: #131313;
+    padding: 1em;
+    border-top: 1px solid #252525;
+    text-align: center;
+}
+
+.credit {
+    opacity: 0.7;
 }
