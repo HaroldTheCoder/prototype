@@ -258,6 +258,15 @@ button {
     #main-navbar, .section-wrapper {
     width: 80%;
 }
+    .nav-button {
+        width: 30px;
+    }
+.bar {
+    height: 2px;
+    width: 100%;
+    margin: 15% 0;
+    background-color: #fff;
+}
     h1 {
         font-size: 2.5em;
     }
