@@ -17,7 +17,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    
 }
 
 h1 { font-size: 3em; }
@@ -27,7 +26,7 @@ h2 { font-size: 2em; }
 .icon-container { font-size: 1.2em;}
 
 h1, h2, h3, h4, h5, h6,
-.logo-link, .nav-link, .section-button a {
+.logo-link, .nav-link {
     color: #fff;
 }
 
@@ -63,6 +62,8 @@ h1, .logo-link,
 
 button {
     border: none;
+    background-color: #BFE17E;
+    font-weight: 500;
 }
 
 /* Top Header - Navbar Style */
@@ -89,7 +90,7 @@ button {
 .hero-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     
 }
 
@@ -105,12 +106,13 @@ button {
 .hero-right {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    
 }
 
 .icon-container {
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     gap: 2em;
 }
 
@@ -154,7 +156,7 @@ button {
     width: 100%;
 }
 .project-content p {
-    width: 70%;
+    width: 80%;
 }
 #projects h2, #projects  h3, 
 #projects  h4, #projects  h5, #projects  h6 {
@@ -182,17 +184,27 @@ button {
     background-color: #131313;
 }
 
+.section-button a {
+    color: #fff;
+}
+
 /* The Lab style */
 #the-lab {
-    background-color: #131313;
+    background: linear-gradient(#BFE17E, #BFE17E), url(images/keyboard-bg.png) no-repeat bottom left;
+    background-size: cover;
     margin-top: -2%;
+    text-align: center;
+}
+#the-lab h2, #the-lab p {
+    color: #131313;
 }
 .transition-img {
     width: 100%;
     height: 150px;
 }
+
 #the-lab {
     padding: 0 0 5em;
-    height: 500px;
+
     
 }
