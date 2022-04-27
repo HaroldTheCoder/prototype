@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Web-Studio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="page-container">
+    <div id="page-container" data-aos="fade-up" data-aos-duration="800">
         <!-- Top Header -->
         <header id="main-header">
             <nav id="main-navbar">
@@ -115,7 +116,7 @@
                         <p class="lead">A selection of my most recent work</p>
                     </header>
 
-                    <div class="section-row-container projects-container">
+                    <div class="section-row-container projects-container" data-aos="fade-up" data-aos-duration="800">
                         <div class="project-content">
                             <p class="lead">O1</p>
                             <h3>DoorDash Landingpage</h3>
@@ -141,7 +142,7 @@
                         </div>
                     </div>
 
-                    <div class="section-row-container projects-container project-2">
+                    <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="800"> 
                         <div class="project-content">
                             <p class="lead">O2</p>
                             <h3>WonderHomes</h3>
@@ -165,7 +166,7 @@
                         </div>
                     </div>
 
-                    <div class="section-row-container projects-container project-2">
+                    <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="800">
                         <div class="project-content">
                             <p class="lead">O3</p>
                             <h3>Drone Intelligence Agency</h3>
@@ -264,7 +265,8 @@
 
         </main>
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 <script src="https://kit.fontawesome.com/69a0798591.js" crossorigin="anonymous"></script>
 </body>
 </html>
