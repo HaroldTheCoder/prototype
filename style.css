@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#main-header, .section-wrapper {
+    width: 80%;
+    margin: auto;
+}
+/* General styles - Fonts, Colors, ect. */
+body {
+    background-color: #131313;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+h1 { font-size: 3em; }
+
+h2 { font-size: 2em; }
+
+.icon-container { font-size: 1.2em;}
+
+h1, h2, h3, h4, h5, h6,
+.logo-link, .nav-link, .section-button a {
+    color: #fff;
+}
+
+p {
+    font-size: 14px;
+    padding: 1em 0;
+}
+
+p, .socialmedia-icon {
+    color: #dedede;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, .logo-link,
+.lead, .custom-button{
+    text-transform: uppercase;
+}
+
+.lead {
+    opacity: 0.6;
+}
+
+.projects-lead {
+    font-weight: 700;
+}
+
+button {
+    border: none;
+}
+
+/* Top Header - Navbar Style */
+#top-header {
+    padding: 1em 0;
+}
+
+.nav-container, .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 1em 1.5em;
+}
+
+/* Hero style */
+#hero {
+    padding: 5em 0;
+}
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-button {
+    width: 150px;
+    padding: 1em;
+}
+.hero-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* About style */
+#about {
+    background-color: #1b1b1b;
+    padding: 3em 0;
+    text-align: center;
+}
+.section-header {
+    padding: 2em 0;
+}
+.section-row-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3em;
+    padding: 2em 0;
+}
+
+.icon-img {
+    padding: 1em 0;
+}
+
+/* Projects section */
+#projects {
+    background-color: #fff;
+    padding: 5em 0;
+}
+
+#projects header {
+    text-align: center;
+    padding: 0 0 5em;
+}
+.project-content .lead {
+    font-size: 2.5em;
+    font-weight: 700;
+    opacity: 0.3;
+    padding: 0.5em 0;
+}
+
+#projects h2, #projects  h3, 
+#projects  h4, #projects  h5, #projects  h6 {
+    color: #131313;
+}
+
+.projects-container {
+    padding: 5em 0;
+}
+.project-content {
+    width: 60%;
+}
+
+#projects p {
+    color: #1b1b1b;
+}
+
+.projects-img {
+    width: 100%;
+}
+
+.section-button {
+    margin: 2em 0 0;
+    padding: 1em;
+    background-color: #131313;
+}
+
