@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
 }
-#main-header, .section-wrapper {
-    width: 80%;
+#main-navbar, .section-wrapper {
+    width: 70%;
     margin: auto;
 }
 /* General styles - Fonts, Colors, ect. */
 body {
-    background-color: #131313;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.5px;
 }
@@ -66,8 +66,9 @@ button {
 }
 
 /* Top Header - Navbar Style */
-#top-header {
+#main-header {
     padding: 1em 0;
+    background-color: #131313;
 }
 
 .nav-container, .navigation{
@@ -83,6 +84,7 @@ button {
 /* Hero style */
 #hero {
     padding: 5em 0;
+    background-color: #131313;
 }
 .hero-container {
     display: flex;
@@ -120,6 +122,7 @@ button {
 }
 .section-header {
     padding: 2em 0;
+    text-align: center;
 }
 .section-row-container {
     display: flex;
@@ -148,8 +151,11 @@ button {
     font-weight: 700;
     opacity: 0.3;
     padding: 0.5em 0;
+    width: 100%;
 }
-
+.project-content p {
+    width: 70%;
+}
 #projects h2, #projects  h3, 
 #projects  h4, #projects  h5, #projects  h6 {
     color: #131313;
@@ -176,3 +182,17 @@ button {
     background-color: #131313;
 }
 
+/* The Lab style */
+#the-lab {
+    background-color: #131313;
+    margin-top: -2%;
+}
+.transition-img {
+    width: 100%;
+    height: 150px;
+}
+#the-lab {
+    padding: 0 0 5em;
+    height: 500px;
+    
+}
