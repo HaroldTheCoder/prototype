@@ -270,7 +270,7 @@ button {
         display: none;
     }
 
-    #hero {
+    #hero, #main-footer {
         padding: 5em 0;
     }
   .hero-container, .slides-container {
