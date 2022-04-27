@@ -272,7 +272,7 @@ button {
         display: none;
     }
 
-    #hero, #main-footer {
+    #hero, #contact {
         padding: 5em 0;
     }
   .hero-container, .slides-container {
@@ -281,7 +281,7 @@ button {
 
     #testimonials {
         padding: 0 0 2em 0;
-        margin-top: -1.5%;
+        margin-top: -2%;
     }
 
 .contact-button {
@@ -326,11 +326,12 @@ button {
     .transition-container {
         margin-top: -3%;
     }
+
+    .review-container {
+        padding: 0;
+    }
     .slides {
         padding: 0;
     }
 
-    button a {
-        color: #fff;
-    }
 }
