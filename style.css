@@ -72,7 +72,7 @@ button {
 /* Top Header - Navbar Style */
 #main-header {
     padding: 1em 0;
-    background-color: #131313;
+    background-color: #0e0e0e;
     border-bottom: 1px solid #252525;
 }
 
@@ -93,7 +93,7 @@ button {
 /* Hero style */
 #hero {
     padding: 7em 0;
-    background-color: #131313;
+    background-color: #0e0e0e;
 }
 .hero-container {
     display: flex;
@@ -126,7 +126,7 @@ button {
 
 /* About style */
 #about {
-    background-color: #1b1b1b;
+    background-color: #151515;
     padding: 3em 0;
     text-align: center;
 }
@@ -161,9 +161,9 @@ button {
     padding: 0 0 5em;
 }
 .project-content .lead {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 700;
-    opacity: 0.3;
+    opacity: 0.1;
     padding: 0.5em 0;
     width: 100%;
 }
@@ -171,8 +171,8 @@ button {
     width: 80%;
 }
 #projects h2, #projects  h3, 
-#projects  h4, #projects  h5, #projects  h6 {
-    color: #131313;
+#projects  h4, #projects  h5, #projects  h6, .projects-lead {
+    color: #0e0e0e;
 }
 
 .projects-container {
@@ -202,7 +202,7 @@ button {
 
 /* Testimonials style */
 #testimonials{
-    background-color: #1b1b1b;
+    background-color: #151515;
     margin-top: -2%;
     padding: 0 0 5em;
 }
@@ -231,7 +231,7 @@ button {
 
 /* Contact style */
 #contact {
-    background-color: #131313;
+    background-color: #0e0e0e;
     padding: 7em 0;
 }
 
@@ -240,7 +240,7 @@ button {
 }
 
 #main-footer {
-    background-color: #131313;
+    background-color: #0e0e0e;
     padding: 1em;
     border-top: 1px solid #252525;
     text-align: center;
@@ -248,10 +248,17 @@ button {
 
 .credit {
     opacity: 0.7;
+    font-size: 0.7em;
 }
 
 .button-mobile, .project-header-mobile, .nav-button {
     display: none;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 @media screen and (max-width: 400px) {
@@ -285,7 +292,7 @@ button {
     #hero, #contact {
         padding: 5em 0;
     }
-  .hero-container, .slides-container {
+  .hero-container, .slides-container, .contact-wrapper {
         flex-direction: column;
     }
 
@@ -298,7 +305,7 @@ button {
     width: 150px;
     padding: 1em;
 }
-.hero-right {
+.hero-right, .section-right {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
