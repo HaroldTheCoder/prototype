@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
     padding: 1em 0;
 }
 .author, .fa-star {
@@ -276,7 +276,6 @@ button {
     width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid #252525;
 
   background-repeat: no-repeat;
   background-position: center top;
