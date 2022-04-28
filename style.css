@@ -67,6 +67,7 @@ button {
     background-color: #d4eb51;
     font-weight: 700;
     border-radius: 0.2em;
+    margin-top: 3%;
 }
 
 /* Top Header - Navbar Style */
@@ -194,7 +195,7 @@ button {
     margin: 2em 0 0;
     padding: 1em;
     background-color: #131313;  
-    box-shadow: 0px 5px 7px #c4c4c4;
+    box-shadow: 0px 5px 5px #d2d2d2;
 
 }
 
