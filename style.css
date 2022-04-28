@@ -253,6 +253,41 @@ button {
     opacity: 0.7;
     font-size: 0.7em;
 }
+.section-right {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.card-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.card-container p {
+    padding: 0.3em 0;
+}
+.profile-img-container {
+    width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #252525;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
+}
+
+.profile-img {
+    width: 100%;
+    object-fit: cover;
+}
 
 .button-mobile, .project-header-mobile, .nav-button {
     display: none;
@@ -261,7 +296,7 @@ button {
 .contact-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 @media screen and (max-width: 400px) {
@@ -308,11 +343,15 @@ button {
     width: 150px;
     padding: 1em;
 }
-.hero-right, .section-right {
+.hero-right, .section-right, .card-container {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     padding: 2em 0 0 0;
+    }
+
+    .card-container {
+        text-align: left;
     }
 
     .section-row-container {
