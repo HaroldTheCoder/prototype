@@ -12,6 +12,10 @@ body {
     background-color: #020202;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
+    
+}
+#page-container {
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -161,6 +165,10 @@ button {
 #main-header {
     padding: 3em 0 1em;
     z-index: 5;
+}
+
+#main-navbar {
+    overflow-x: hidden;
 }
 
 .logo-wrapper {
