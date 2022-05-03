@@ -159,7 +159,7 @@ button {
 /* Top Header - Navbar Style */
 #main-header {
     padding: 3em 0 1em;
-    border-bottom: 1px solid #0e0e0e;
+    
    
 }
 
@@ -402,7 +402,7 @@ button {
 /* Contact style */
 #contact {
     padding: 7em 0;
-    border-bottom: 1px solid #0e0e0e;
+   
 }
 
 #contact h2 {
@@ -490,7 +490,7 @@ button {
     }
 
     #controls img {
-        width: 25px;
+        width: 22px;
     }
 
 
@@ -499,7 +499,7 @@ button {
     }
 
     #main-header {
-    padding: 1em 0 1em;
+    padding: 1.5em 0 1.5em;
    
 }
 
