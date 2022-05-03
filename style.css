@@ -12,6 +12,7 @@ body {
     background-color: #020202;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
+    overflow-x: hidden;
 }
 
 h1 { 
@@ -191,7 +192,7 @@ button {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #050505;
+    background-color: #020202;
     padding: 2em;
     z-index: 10;
     display: flex;
@@ -275,7 +276,7 @@ button {
 #about {
     padding: 5em 0;
     text-align: center;
-    background-color: #050505;
+    background-color: #070707;
     color: #050505;
 }
 
@@ -357,7 +358,7 @@ button {
 /* Testimonials style */
 #testimonials{
     padding: 5em 0;
-    background-color: #050505;
+    background-color: #070707;
     position: relative;
     text-align: center;
     overflow: hidden;
