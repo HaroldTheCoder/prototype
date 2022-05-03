@@ -40,7 +40,7 @@ h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, 
 .logo-link, .nav-link,
-.author, .fa-star { 
+.author, .fa-star, .controls { 
     color: #fff; 
 }
 
@@ -50,7 +50,7 @@ p {
 }
 
 p, .socialmedia-icon {  
-    color: #dedede; 
+    color: #a9a9a9; 
 }
 
 #projects h2, #projects h3 {
@@ -67,7 +67,8 @@ a {
 }
 
 .lead, .socialmedia-icon { 
-    opacity: 0.6; 
+    color: #fff;
+    opacity: 0.7; 
 }
 
 .socialmedia-icon:hover { 
@@ -158,6 +159,7 @@ button {
 /* Top Header - Navbar Style */
 #main-header {
     padding: 3em 0 1em;
+    border-bottom: 1px solid #0e0e0e;
    
 }
 
@@ -207,7 +209,7 @@ button {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    gap: 2em;
+    gap: 1.5em;
 }
 
 /* About style */
@@ -343,7 +345,7 @@ button {
 }
 
 #controls {
-	width: 70%;
+	width: 60%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -363,6 +365,16 @@ button {
 	align-items: center;
 	font-size: 1.5em;
 	cursor: pointer;
+    opacity: 0.6;
+}
+
+.controls span {
+    font-size: 0.6em;
+}
+
+.controls:hover {
+    transition: opacity ease 0.2s;
+    opacity: 1;
 }
 
 #bullets {
@@ -390,6 +402,7 @@ button {
 /* Contact style */
 #contact {
     padding: 7em 0;
+    border-bottom: 1px solid #0e0e0e;
 }
 
 #contact h2 {
@@ -465,19 +478,30 @@ button {
         font-size: 1.5em;
     }
 
-
-
     .button-mobile, .project-header-mobile {
         display: block;
     }
     .navigation, .project-content,
-    .slide-background, #controls {
+    .slide-background {
         display: none;
     }
+    #controls {
+        width: 100%; 
+    }
+
+    #controls img {
+        width: 25px;
+    }
+
 
     #main-navbar, .section-wrapper {
         width: 80%;
     }
+
+    #main-header {
+    padding: 1em 0 1em;
+   
+}
 
     .nav-button {
         width: 30px;
@@ -512,7 +536,6 @@ button {
 
     #testimonials {
         padding: 2em 0;
-        margin-top: -2%;
     }
 
     #the-lab {

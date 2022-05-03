@@ -40,8 +40,10 @@ next.addEventListener("click", () => {
 	bullet.children[slideIndex].classList.add("selected");
 });
 
-prev.addEventListener("click", () => {
+prev.addEventListener("click", (e) => {
 	slideIndex = slideIndex > 0 ? slideIndex - 1 : 0;
 	setIndex();
 	bullet.children[slideIndex].classList.add("selected");
+
+	
 });
