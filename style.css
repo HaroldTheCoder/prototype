@@ -199,7 +199,7 @@ button {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: flex-start;
-    transition: right 800ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: right 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);;
 }
 .navigation-mobile .nav-link {
     font-size: 2em;
@@ -219,21 +219,34 @@ button {
     padding: 0;
     color: #fff;
 }
-   
+   .nav-button {
+       position: relative;
+       height: 30px;
+   }
 .bar {
         height: 2px;
         width: 100%;
         margin: 25% 0;
         background-color: #fff;
-        
-         transition: transform ease 800ms;
+        position: absolute;
+         transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
     }
+    .bar:nth-child(1) {
+    top: 0;
+}
+.bar:nth-child(2) {
+    width: 50%;
+    bottom: 0;
+}
 
 .bar:nth-child(1).bar-active {
-    transform: translateY(5px) rotate(320deg);
+    transform: rotate(45deg);
+				top: 7px;;
 }
 .bar:nth-child(2).bar-active {
-    transform: translateY(-5px) rotate(-320deg);
+    transform: rotate(-45deg);
+    width: 100%;
+	bottom: 7px;
 }
 
 #mobile-navbar.nav-active {
