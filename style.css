@@ -199,7 +199,7 @@ button {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: flex-start;
-    transition: right 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);;
+    transition: right 0.3s cubic-bezier(0.1, 0.82, 0.76, 0.965);
 }
 .navigation-mobile .nav-link {
     font-size: 2em;
@@ -229,7 +229,7 @@ button {
         margin: 25% 0;
         background-color: #fff;
         position: absolute;
-         transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+         transition: all 0.3s cubic-bezier(0.1, 0.82, 0.76, 0.965);
     }
     .bar:nth-child(1) {
     top: 0;
@@ -240,11 +240,11 @@ button {
 }
 
 .bar:nth-child(1).bar-active {
-    transform: rotate(45deg);
+    transform: rotate(42deg);
 				top: 7px;;
 }
 .bar:nth-child(2).bar-active {
-    transform: rotate(-45deg);
+    transform: rotate(-43deg);
     width: 100%;
 	bottom: 7px;
 }
