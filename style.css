@@ -9,7 +9,7 @@
 }
 /* General styles - Fonts, Colors, ect. */
 body {
-    background-color: #050505;
+    background-color: #020202;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
 }
@@ -159,6 +159,11 @@ button {
 /* Top Header - Navbar Style */
 #main-header {
     padding: 3em 0 1em;
+    z-index: 5;
+}
+
+.logo-wrapper {
+    z-index: 11;
 }
 
 .nav-container, .navigation{
@@ -186,7 +191,7 @@ button {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #020202;
+    background-color: #050505;
     padding: 2em;
     z-index: 10;
     display: flex;
@@ -219,7 +224,7 @@ button {
         width: 100%;
         margin: 25% 0;
         background-color: #fff;
-        z-index: 11;
+        
          transition: transform ease 800ms;
     }
 
@@ -270,7 +275,7 @@ button {
 #about {
     padding: 5em 0;
     text-align: center;
-    background-color: #0a0a0a;
+    background-color: #050505;
     color: #050505;
 }
 
@@ -352,7 +357,7 @@ button {
 /* Testimonials style */
 #testimonials{
     padding: 5em 0;
-    background-color: #0a0a0a;
+    background-color: #050505;
     position: relative;
     text-align: center;
     overflow: hidden;
