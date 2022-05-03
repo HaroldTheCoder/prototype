@@ -159,8 +159,6 @@ button {
 /* Top Header - Navbar Style */
 #main-header {
     padding: 3em 0 1em;
-    
-   
 }
 
 .nav-container, .navigation{
@@ -179,6 +177,62 @@ button {
 
 .nav-item {
     padding: 1em 0;
+}
+
+/* Mobile navigation */
+#mobile-navbar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #020202;
+    padding: 2em;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: right 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.navigation-mobile .nav-link {
+    font-size: 2.5em;
+}
+
+.contact-info {
+    padding:0;
+}
+
+.socialmedia-link-mobile p a {
+    color:#fff;
+    text-decoration: underline;
+
+}
+
+.navigation-mobile-wrapper p{
+    padding: 0;
+    color: #fff;
+}
+   
+.bar {
+        height: 2px;
+        width: 100%;
+        margin: 25% 0;
+        background-color: #fff;
+        z-index: 11;
+         transition: transform ease 800ms;
+    }
+
+.bar:nth-child(1).bar-active {
+    transform: translateY(5px) rotate(320deg);
+}
+.bar:nth-child(2).bar-active {
+    transform: translateY(-5px) rotate(-320deg);
+}
+
+#mobile-navbar.nav-active {
+    right: 0;
+    
 }
 
 /* Hero style */
@@ -466,6 +520,43 @@ button {
     font-size: 0.7em;
 }
 
+/* Contact Modal */
+
+.contact-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.contact-modal .section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 500px;
+    padding: 5em;
+    border-radius: 0.2em;
+}
+
+.contact-modal-left {
+    background-color: #0a0a0a;
+    height: 100%;
+    padding: 2em;
+}
+
+.contact-modal-right {
+    background-color: #252525;
+    height: 100%;
+    padding: 2em;
+}
+
 /* Responsive mobile */
 
 @media screen and (max-width: 400px) {
@@ -478,7 +569,7 @@ button {
         font-size: 1.5em;
     }
 
-    .button-mobile, .project-header-mobile {
+    .button-mobile, .project-header-mobile, .navigation-mobile {
         display: block;
     }
     .navigation, .project-content,
@@ -506,15 +597,8 @@ button {
     .nav-button {
         width: 30px;
         display: block;
-    }
-
-   
-    .bar {
-        height: 2px;
-        width: 100%;
-        margin: 25% 0;
-        background-color: #fff;
-    }
+        z-index: 11;
+}
 
     #hero {
         padding: 5em 0 7em 0;
