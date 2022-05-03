@@ -476,7 +476,6 @@ button {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	cursor: pointer;
 	background:  #444;
 	border-radius: 100%;
 	margin: 0 5px;

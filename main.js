@@ -1,15 +1,4 @@
 
-
-/*window.addEventListener('scroll', ()=> {
-    if(window.scrollY > 0) {
-        document.body.classList.add('light-active');
-        document.body.classList.remove('dark-active');
-    } else  {
-        document.body.classList.remove('active');
-        document.body.classList.add('dark-active');
-    }
-})*/
-
 // Mobile navigation function 
 
 const navbar = document.querySelector('#mobile-navbar');
@@ -44,13 +33,6 @@ function setIndex() {
 	reviewSlider.style.transform = `translate(${slideIndex * -33.33}%)`;
 }
 
-document.querySelectorAll("li").forEach((bullets, ind) => {
-	bullets.addEventListener("click", () => {
-		slideIndex = ind;
-		setIndex(slideIndex);
-		bullets.classList.add("selected");
-	});
-});
 
 next.addEventListener("click", () => {
 	slideIndex = slideIndex < 2 ? slideIndex + 1 : 2;
