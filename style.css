@@ -125,7 +125,6 @@ button {
 
 .section-button {
     margin: 2em 0 0;
-    padding: 1em;
     background-color: #050505;  
     border: 1px solid #050505;
 }
@@ -458,13 +457,15 @@ button {
 
 @media screen and (max-width: 400px) {
 
-    h1 {
-        font-size: 2.5em;
+    h1, #contact h2 {
+        font-size: 2em;
     }
 
-    h2 {
+    h2{
         font-size: 1.5em;
     }
+
+
 
     .button-mobile, .project-header-mobile {
         display: block;
@@ -483,11 +484,16 @@ button {
         display: block;
     }
 
+   
     .bar {
         height: 2px;
         width: 100%;
         margin: 25% 0;
         background-color: #fff;
+    }
+
+    #hero {
+        padding: 5em 0 7em 0;
     }
 
     #hero, #contact {
@@ -509,13 +515,11 @@ button {
         margin-top: -2%;
     }
 
+    #the-lab {
+        background-attachment: scroll;
+    }
     #the-lab img {
         width: 60%;
-    }
-
-    .contact-button {
-        width: 150px;
-        padding: 1em;
     }
 
     .hero-right, .section-right, .card-container {
@@ -569,7 +573,6 @@ button {
     .review-container, .slide-content {
 		width: 100%;
 	}
-
 
 
 }
