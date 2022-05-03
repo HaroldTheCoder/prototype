@@ -7,20 +7,22 @@
     <title>JR Web-Studio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Page starts here -->
     <div id="page-container">
         <!-- Top Header -->
         <header id="main-header">
             <nav id="main-navbar">
                 <div class="nav-container">
                     <div class="logo-wrapper">
-                        <a href="" class="logo-link">Web-Studio</a>
+                        <a href="" class="logo-link"><img src="images/jr-logo-dark.png" alt="" width="125px"></a>
                     </div>
 
+                    <!-- Navigation -->
                     <div class="navigation-wrapper">
                         <ul class="navigation">
                             <li class="nav-item"><a href="" class="nav-link">Work</a></li>
@@ -28,7 +30,6 @@
                             <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
-
                     <div class="nav-button">
                         <div class="bar"></div>
                         <div class="bar"></div>
@@ -37,16 +38,18 @@
             </nav>
         </header>
 
-        <!-- Main page content -->
+        <!-- Main content -->
         <main id="main-content">
+
+            <!-- Hero -->
             <section id="hero" class="hero-section">
                 <div class="hero-container section-wrapper">
                     <div class="hero-left">
                         <div class="hero-title">
-                            <p class="lead">Jarol Riera</p>
+                            <p class="lead"></p>
                             <h1>Web Developer + <br> Ui Designer</h1>
                             <p>I am a Freelance Front-End developer and designer.</p>
-                            <button class="contact-button custom-button"><a href="">Get in touch</a></button>
+                            <button class="contact-button custom-button"><span class="button-fill"></span><a href="">Get in touch</a></button>
                         </div>
                     </div>
                     <div class="hero-right">
@@ -54,12 +57,12 @@
                             <a href="" class="socialmedia-icon"><i class="fa-brands fa-github"></i></a>
                             <a href="" class="socialmedia-icon"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="" class="socialmedia-icon"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="" class="socialmedia-icon"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- About -->
             <section id="about">
                 <div class="section-wrapper">
                     <header class="section-header">
@@ -71,9 +74,9 @@
                         <div class="row-box">
                             <header class="box-header">
                                 <figure>
-                                    <img src="images/coding-white.png" alt="" class="icon-img" width="50px" height="auto">
-                                    <h4>Web Development</h4>
+                                    <img src="images/coding-white.png" alt="" class="icon-img" width="55px" height="auto">
                                 </figure>
+                                <h3>Web Development</h3>
                             </header>
                             <div class="box-content">
                                 <p>I build websites from scratch. If you already have one,
@@ -85,12 +88,12 @@
                         <div class="row-box">
                             <header class="box-header">
                                 <figure>
-                                    <img src="images/wordpress-white.png" alt="" class="icon-img" width="50px" height="auto">
-                                    <h4>WordPress</h4>
+                                    <img src="images/wordpress-white.png" alt="" class="icon-img" width="60px" height="auto">
                                 </figure>
+                                <h3>WordPress</h3>
                             </header>
                             <div class="box-content">
-                                <p>Reliable, secure and SEO friendly. It's the most popular website builder 
+                                <p>Reliable and SEO friendly. It's the most popular website builder 
                                     Choose your theme and I will make it shine.
                                 </p>
                             </div>
@@ -99,9 +102,9 @@
                         <div class="row-box">
                             <header class="box-header">
                                 <figure>
-                                    <img src="images/web-design-white.png" alt="" class="icon-img" width="50px" height="auto">
-                                    <h4>Web Design</h4>
+                                    <img src="images/web-design-white.png" alt="" class="icon-img" width="60px" height="auto">
                                 </figure>
+                                <h3>Web Design</h3>
                             </header>
                             <div class="box-content">
                                 <p>With a kneen eye for details,
@@ -114,208 +117,225 @@
                 </div>
             </section>
 
-             <div class="transition-container">
-                <img src="images/faded-top-darker.png" alt="" class="transition-img">
-            </div>
-
+            <!-- Projects -->
             <section id="projects">
                 <div class="section-wrapper">
                     <header class="section-header">
-                        <h2>Latest Work</h2>
-                        <p class="lead">A selection of my most recent work</p>
+                        <h2>Selected work</h2>
+                        <p class="lead">A selection of my most recent projects and work for clients</p>
                     </header>
 
+                    <!-- Project 1 -->
                     <div class="section-row-container projects-container" data-aos="fade-up" data-aos-duration="600">
                         <div class="project-content">
-                            <p class="lead">O1</p>
+                            <figure>
+                                <img src="images/n1.png" alt="" width="100px">
+                            </figure>
                             <h3>DoorDash Landingpage</h3>
-                            <p>For this project I wanted to redesign the DoorDash for Merchants landingpage and give it a new look. 
-                                An additional feature that I implemented on this projects is an
-                                auto chatbot, where you can open and ask any question help basic questions related to this topic.
-                            </p>
-                            <p class="projects-lead">Technologies used for this project:</p>
-                            <ul class="project-icon-wrapper">
-                                <li> <i class="fab fa-html5"></i> Html5</li>
-                                <li> <i class="fab fa-css3"></i> Css3</li>
-                                <li> <i class="fab fa-js"></i> JavaScript</li>
-                            </ul>
-
-                            <button class="section-button custom-button"><a href="">View project</a></button>
+                            <p>A redesign of the DoorDash for Merchants landingpage with an auto chatbot feature.</p>
+                            <button class=" custom-button secondary-button"><a href="">Details</a></button>
+                            <button class="section-button"><a href="">View project</a></button>
                         </div>
-
-
+            
                         <div class="project-media">
+                            <!-- Mobile project header -->
                             <div class="project-header-mobile">
-                                <p class="lead">O1</p>
+                                <figure>
+                                    <img src="images/n1.png" alt="" width="100px">
+                                </figure>
                                 <h3>DoorDash Landingpage</h3>
                             </div>
                             <figure class="img-container">
                                 <img src="images/2.png" alt="" class="projects-img">
                             </figure>
-                            <button class="section-button custom-button button-mobile"><a href="">View project</a></button>
+                            <button class="section-button button-mobile"><a href="">View project</a></button>
                         </div>
                     </div>
 
+                    <!-- Project 2 -->
                     <div class="section-row-container projects-container project-2" data-aos="fade-up" data-aos-duration="600">
                         <div class="project-content">
-                            <p class="lead">O2</p>
+                            <figure>
+                                <img src="images/n2.png" alt="" width="100px">
+                            </figure>
                             <h3>WonderHomes</h3>
-                            <p>For this project I wanted to redesign the DoorDash for Merchants landingpage and give it a new look. 
-                                An additional feature that I implemented on this projects is an
-                                auto chatbot, where you can open and ask any question help basic questions related to this topic.
-                            </p>
-                            <p class="projects-lead">Technologies used for this project:</p>
-                            <ul class="project-icon-wrapper">
-                                <li> <i class="fab fa-html5"></i> Html5</li>
-                                <li> <i class="fab fa-bootstrap"></i> Bootstrap</li>
-                                <li> <i class="fab fa-js"></i> JavaScript</li>
-                            </ul>
-
-                             <button class="section-button custom-button"><a href="">View project</a></button>
+                            <p>A real estate multipage website template built with the Bootstrap framework.</p>
+                            <button class="secondary-button"><a href="">Details</a></button>
+                            <button class="section-button"><a href="">View project</a></button>
                         </div>
+
                         <div class="project-media">
+                            <!-- Mobile project header -->
                             <div class="project-header-mobile">
-                                <p class="lead">O2</p>
+                                <figure>
+                                    <img src="images/n2.png" alt="" width="100px">
+                                </figure>
                                 <h3>WonderHomes</h3>
                             </div>
                             <figure class="img-container">
                                 <img src="images/1.png" alt="" class="projects-img">
                             </figure>
-                            <button class="section-button custom-button button-mobile"><a href="">View project</a></button>
+                            <button class="section-button button-mobile"><a href="">Visit site</a></button>
                         </div>
                     </div>
 
+                    <!-- Project 3 -->
                     <div class="section-row-container projects-container" data-aos="fade-up" data-aos-duration="600">
                         <div class="project-content">
-                            <p class="lead">O3</p>
+                            <figure>
+                                <img src="images/n3.png" alt="" width="100px">
+                            </figure>
                             <h3>Drone Intelligence Agency</h3>
-                            <p>For this project I wanted to redesign the DoorDash for Merchants landingpage and give it a new look. 
-                                An additional feature that I implemented on this projects is an
-                                auto chatbot, where you can open and ask any question help basic questions related to this topic.
-                            </p>
-                            <p class="projects-lead">Technologies used for this project:</p>
-                            <ul class="project-icon-wrapper">
-                                <li> <i class="fab fa-wordpress"></i> WordPress</li>
-                                <li> <i class="fab fa-css3"></i> Css3</li>
-                                <li> <i class="fab fa-js"></i> JavaScript</li>
-                            </ul>
-
-                            <button class="section-button custom-button"><a href="">View project</a></button>
+                            <p>A WordPress multipage website I have built for the a drone compay based in Maryland.</p>
+                            <button class="secondary-button"><a href="">Details</a></button>
+                            <button class="section-button"><a href="">View project</a></button>
                         </div>
+
                         <div class="project-media">
+                            <!-- Mobile project header -->
                             <div class="project-header-mobile">
-                                <p class="lead">O3</p>
+                                <figure>
+                                    <img src="images/n3.png" alt="" width="100px">
+                                </figure>
                                 <h3>Drone Intelligence Agency</h3>
                             </div>
                             <figure class="img-container">
                                 <img src="images/3.png" alt="" class="projects-img">
                             </figure>
-                            <button class="section-button custom-button button-mobile"><a href="">View project</a></button>
+                        
+                            <button class="section-button button-mobile"><a href="">View project</a></button>
                         </div>
                     </div>
                 </div>
             </section>
             
-            <div class="transition-container">
-                <img src="images/faded-bottom-darker.png" alt="" class="transition-img">
-            </div>
-
-            <section id="testimonials">
-        
-                <header class="section-header">
-                    <h2>Happy Clients</h2>
-                    <p class="lead">Kind words from my clients</p>
-                </header>
-                <div class="review-container section-wrapper">  
-                    <div class="review-slider">
-                        <div class="slides-container">
-
-                            <section id="last-slide" class="slide slide-1">
-                                <div class="slide-content">
-                                    <p class="review-top">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                    <p class="testimonial">"Jarol illustrated the level of professionalism, confidentiality, commitment to excellence and subject matter expertise warranted. The end results exceeded our expectations and it's this type of can-do attitude, while meeting key milestones - that we have come to trust."</p>
-                                    <p class='author'>– Drone Intelligence Agency </p>
-                                </div>
-                            </section>
-
-                            <section class="slide slide-2">
-                                <div class="slide-content">
-                                    <p class="review-top">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                    <p class="testimonial">"Jarol Riera Web Development provided clear, clean and creative design work for my landing page project with diligent communication and attention. I look forward to continuing my web development alliance with his diligent commitment to service and excellence."</p>
-                                    <p class='author'>– A Concious Life Style </p>
-                                </div>
-                            </section>
-
-                            <section class="slide slide-3">
-                                <div class="slide-content">
-                                    <p class="review-top">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                    <p class="testimonial">"Outstanding work and designs. Besides making this process very smooth and easy, he was quick to respond to all our issues and questions. If you are looking to start a website we highly recomend Jarol."</p>
-                                    <p class='author'>– J&S Renovations</p>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
+            <!-- The Lab -->
+            <section id="the-lab">
+                <div class="section-wrapper">
+                    <header>
+                        <img src="images/Thelab-title.svg" alt="" width="30%">
+                    </header>
                 </div>
             </section>
 
+            <!-- Testimonials -->
+            <section id="testimonials">
+                <div class="section-wrapper">
+                    <header class="section-header">
+                        <h2>Happy clients</h2>
+                        <p class="lead">Stories of people and companies that have worked with me</p>
+                    </header>
+
+                    <!-- Slider container -->
+                    <div class="review-container section-wrapper">  
+                        <div class="review-slider">
+                            <div class="slides-container">
+                                <!-- First slide -->
+                                <div id="last-slide" class="slide slide-1">
+                                    <div class="slide-background"></div>
+                                    <div class="slide-content">
+                                        <p class="review-top">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                        <p class="testimonial">"Jarol illustrated the level of professionalism, commitment to excellence and subject matter expertise warranted. The end results exceeded our expectations and it's this type of can-do attitude, that we have come to trust."</p>
+                                        <p class='author'>– Drone Intelligence Agency </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Second slide -->
+                                <div class="slide slide-2">
+                                    <div class="slide-background"></div>
+                                    <div class="slide-content">
+                                        <p class="review-top">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                        <p class="testimonial">"JR Web Studio provided clear, clean and creative design work for my landing page with diligent communication and attention. I look forward to continuing my web development alliance with his diligent commitment to service and excellence."</p>
+                                        <p class='author'>– A Concious Life Style </p>
+                                    </div>
+                                </div>
+
+                                <!-- Third slide -->
+                                <div class="slide slide-3">
+                                    <div class="slide-background"></div>
+                                    <div class="slide-content">
+                                        <p class="review-top">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                        <p class="testimonial">"Outstanding work and designs. Besides making this process very smooth and easy, he was quick to respond to all our issues and questions. If you are looking to start a website we highly recomend Jarol."</p>
+                                        <p class='author'>– J&S Renovations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <div id="controls">
+                        <p class="prev controls"><i class="fas fa-chevron-left"></i></p>
+                        <p class="next controls"><i class="fas fa-chevron-right"></i></p>
+                    </div>
+                    <ul id="bullets">
+                        <li class="selected"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact -->
             <section id="contact">
                 <div class="contact-wrapper section-wrapper">
                     <div class="section-left">
-                        <header>
-                            <h2>Let's get in touch</h2>
+                        <header> 
+                            <h2>Let's connect.</h2>
                             <p>Contact me, it's quick and easy.</p>
                         </header>
-                        <button class="contact-button custom-button"><a href="">Get in touch</a></button>
-                
+                        <button class="contact-button custom-button"><span class="button-fill"></span><a href="">Get in touch</a></button> 
                     </div>
-                    <div class="section-right">
-                            <div class="card-container">
-                            <figure class="profile-img-container">
-                               
-                            </figure>
 
+                    <div class="section-right">
+                        <div class="card-container">
+                            <div class="profile-img-container"></div>
                             <div class="card-title">
                                 <p>Jarol Riera</p>
                                 <p class="lead">Front-End Developer & UI Desinger</p>
                             </div>
-                            </div>
+                        </div>
+
                         <div class="icon-container">
                             <a href="" class="socialmedia-icon"><i class="fa-brands fa-github"></i></a>
                             <a href="" class="socialmedia-icon"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="" class="socialmedia-icon"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="" class="socialmedia-icon"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
                 </div>
-        
             </section>
+
+            <!-- Footer -->
             <footer id="main-footer">
-                    <p class="credit">&copy;2022 Jarol Riera Web-Studio.</p>
+                <div class="logo-wrapper">
+                    <a href="" class="logo-link"><img src="images/jr-logo-dark.png" alt="" width="125px"></a>
+                </div>
+                <p class="credit">&copy;2022 Jarol Riera Web-Studio.</p>
             </footer>
-
         </main>
-</div>
+    </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script> AOS.init();</script>
-<script src="https://kit.fontawesome.com/69a0798591.js" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    <script src="https://kit.fontawesome.com/69a0798591.js" crossorigin="anonymous"></script>
 </body>
 </html>
