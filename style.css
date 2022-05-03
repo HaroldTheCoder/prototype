@@ -16,7 +16,9 @@ body {
 }
 #page-container {
     position: relative;
-    overflow-x: hidden;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
 h1 { 
@@ -59,7 +61,7 @@ p, .socialmedia-icon {
 }
 
 #projects h2, #projects h3 {
-    color: #050505;
+    color: #020202;
     font-weight: 400;
 }
 
@@ -102,7 +104,7 @@ button {
 .contact-button {
     border: 1px solid #fff;
     color: #fff;
-    background-color: #050505;
+    background-color: #020202;
     position: relative;
     
 }
@@ -123,7 +125,7 @@ button {
 }
 
 .contact-button:hover a{
-    color: #050505;
+    color: #020202;
     z-index: 3;
     position: relative;
     transition: color ease 0.3s;
@@ -131,8 +133,8 @@ button {
 
 .section-button {
     margin: 2em 0 0;
-    background-color: #050505;  
-    border: 1px solid #050505;
+    background-color: #020202;  
+    border: 1px solid #020202;
 }
 
 .section-button a {
@@ -146,11 +148,11 @@ button {
 
 .secondary-button {
     background-color: #fff;
-    border: 1px solid #050505;
+    border: 1px solid #020202;
 }
 
 .secondary-button a {
-    color: #050505;
+    color: #020202;
 }
 
 .secondary-button:hover a {
@@ -226,21 +228,25 @@ button {
     padding: 0;
     color: #020202;
 }
-   .nav-button {
-       position: relative;
-       height: 30px;
-   }
+
+.nav-button {
+    position: relative;
+    height: 30px;
+}
+
 .bar {
-        height: 2px;
-        width: 100%;
-        margin: 25% 0;
-        background-color: #fff;
-        position: absolute;
-         transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
-    }
-    .bar:nth-child(1) {
+    height: 2px;
+    width: 100%;
+    margin: 25% 0;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+
+.bar:nth-child(1) {
     top: 0;
 }
+
 .bar:nth-child(2) {
     width: 50%;
     bottom: 0;
@@ -251,8 +257,9 @@ button {
 				top: 7px;
                 background-color: #020202;
 }
+
 .bar:nth-child(2).bar-active {
-    transform: rotate(-43deg);
+    transform: rotate(-42deg);
     width: 100%;
 	bottom: 7px;
     background-color: #020202;
@@ -298,8 +305,7 @@ button {
 #about {
     padding: 5em 0;
     text-align: center;
-    background-color: #070707;
-    color: #050505;
+    background-color: #080808;
 }
 
 .section-header {
@@ -380,7 +386,7 @@ button {
 /* Testimonials style */
 #testimonials{
     padding: 5em 0;
-    background-color: #070707;
+    background-color: #080808;
     position: relative;
     text-align: center;
     overflow: hidden;
