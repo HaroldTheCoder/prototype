@@ -4,17 +4,17 @@ const navbar = document.querySelector('#mobile-navbar');
 const navButton = document.querySelector('.nav-button');
 const buttonBar = document.querySelectorAll('.bar');
 
-navButton.addEventListener('click', ()=> {
+navButton.addEventListener('click', () => {
 	
-
 	if(navbar.classList.contains('nav-active')) {
 		navbar.classList.remove('nav-active');
-		buttonBar.forEach((b)=> b.classList.remove('bar-active'));
-		document.body.style.overflowY = "scroll";
+		buttonBar.forEach((b) => b.classList.remove('bar-active'));
+        document.body.style.position = 'static'
 	} else {
 		navbar.classList.toggle('nav-active');
 		buttonBar.forEach((b)=> b.classList.toggle('bar-active'));
-		document.body.style.overflowY = "hidden";
+         document.body.style.position = 'fixed';
+         document.body.style.width = "100%";
 	}
 })
 
@@ -30,13 +30,14 @@ const middleCard = document.querySelector(".middle-card");
 let slideIndex = 0;
 
 
-function setIndex() {
+const setIndex = () => {
+
 	document.querySelector("#bullets .selected").classList.remove("selected");
 	reviewSlider.style.transform = `translate(${slideIndex * -33.33}%)`;
 }
 
-
 next.addEventListener("click", () => {
+    
 	slideIndex = slideIndex < 2 ? slideIndex + 1 : 2;
 	setIndex();
 	bullet.children[slideIndex].classList.add("selected");
@@ -46,6 +47,20 @@ prev.addEventListener("click", (e) => {
 	slideIndex = slideIndex > 0 ? slideIndex - 1 : 0;
 	setIndex();
 	bullet.children[slideIndex].classList.add("selected");
-
-	
 });
+
+
+const autoSlider = () => {
+
+    if(bullet.children[2].classList.contains('selected')) {
+        slideIndex = slideIndex > 0 ? slideIndex - 2 : 0;
+	    setIndex();
+	    bullet.children[slideIndex].classList.add("selected");
+    } else {
+        slideIndex = slideIndex < 2 ? slideIndex + 1 : 2;
+	    setIndex();
+	    bullet.children[slideIndex].classList.add("selected");
+    }
+}
+
+setInterval(autoSlider, 4500);
