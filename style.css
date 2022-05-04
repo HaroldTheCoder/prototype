@@ -165,19 +165,15 @@ button {
 #main-navbar {
     overflow-x: hidden;
 }
-
 .logo-wrapper {
     z-index: 11;
 }
 
-.nav-container, .navigation{
+.nav-container, .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
+    flex-direction: row;
 }
 
 .navigation {
@@ -185,8 +181,48 @@ button {
 }
 
 .nav-item {
+    display: flex;
+    flex-direction: column;
     padding: 1em 0;
 }
+
+.navigation .nav-link {
+    position: relative;
+}
+
+.fill-link {
+    opacity: 0;
+}
+
+.rotating-link {
+    left: 0;
+    margin: -10px 0 0 0;
+    position: absolute;
+    top: 0;
+    transition: 
+        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s, 
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s;
+}
+
+.rotating-link:nth-child(1) {
+    opacity: 1;
+}
+
+.rotating-link:nth-child(2) {
+    margin-top: 20px;
+}
+
+.nav-item:hover .rotating-link:nth-child(1) {
+    transform: translate3d(0, -15px, 0);
+    opacity: 0;  
+}
+
+.nav-item:hover .rotating-link:nth-child(2) {
+    transform: translate3d(0, -30px, 0);
+    opacity: 1;
+    text-decoration: underline;
+}
+
 
 /* Mobile navigation */
 #mobile-navbar {
@@ -389,6 +425,7 @@ button {
     margin: auto;
     transform: translate(-50%, -50%);
     border: 3px solid #0e0e0e;
+    border-radius: 0.2em;
 }
 
 .slides-container {
@@ -459,7 +496,8 @@ button {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	border:1px solid  #444;
+	border: 1px solid  #444;
+    border-radius: 0.05em;
 	margin: 0 5px;
 }
 
@@ -512,7 +550,7 @@ button {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
+    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpeg);
 }
 
 .icon-container {
@@ -620,7 +658,7 @@ button {
 
     #hero {
         padding: 5em 0 7em 0;
-	height: 80vh;
+        height: 100vh;
     }
 
     #hero, #contact {
