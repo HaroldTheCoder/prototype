@@ -63,4 +63,4 @@ const autoSlider = () => {
     }
 }
 
-setInterval(autoSlider, 4500);
+setInterval(autoSlider, 8000);
