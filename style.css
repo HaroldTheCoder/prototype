@@ -22,7 +22,7 @@ body {
 }
 
 h1 { 
-    font-size: 4em;
+    font-size: 4.5em;
  }
 
 h2 { 
@@ -33,11 +33,7 @@ h3 {
     font-size: 1.2em;
 }
 
-.icon-container {
-    font-size: 1.2em;
-}
-
-h1, h2, .custom-button { 
+h1, h2 { 
     font-weight: 300; 
 }
 
@@ -47,16 +43,13 @@ h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, 
 .logo-link, .nav-link,
-.author, .fa-star, .controls { 
+.author, .fa-star, .controls, .icon-container a{ 
     color: #fff; 
 }
 
 p {
     font-size: 16px;
     padding: 1em 0;
-}
-
-p, .socialmedia-icon {  
     color: #a9a9a9; 
 }
 
@@ -73,7 +66,7 @@ a {
     text-decoration: none; 
 }
 
-.lead, .socialmedia-icon { 
+.lead { 
     color: #fff;
     opacity: 0.7; 
 }
@@ -278,8 +271,8 @@ button {
 
 .hero-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     
 }
 
@@ -293,13 +286,6 @@ button {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.icon-container {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    gap: 1.5em;
 }
 
 /* About style */
@@ -376,7 +362,6 @@ button {
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(images/Phone\ and\ Tablet\ Mockup\ for\ Promo\ Fashion\ Instagram\ Post.svg) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
     text-align: center;
 }
 
@@ -474,8 +459,7 @@ button {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	background:  #444;
-	border-radius: 100%;
+	border:1px solid  #444;
 	margin: 0 5px;
 }
 
@@ -497,13 +481,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#contact .icon-container {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    gap: 1.5em;
 }
 
 .section-right {
@@ -535,7 +512,18 @@ button {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
+    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpeg);
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 1.5em;
+}
+
+.icon-container a {
+    text-decoration: underline;
 }
 
 
@@ -639,13 +627,12 @@ button {
     }
 
     .hero-container, .contact-wrapper,
-    .section-row-container  {
+    .section-row-container, .icon-container {
         flex-direction: column;
     }
 
     .icon-container {
         gap: 1em;
-        flex-direction: row;
     }
 
     #testimonials {
