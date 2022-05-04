@@ -507,6 +507,7 @@ button {
 
 #bullets li.selected {
 	background-color: #ccc;
+	border-color: #ccc;
 }
 
 
@@ -554,7 +555,7 @@ button {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpeg);
+    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
 }
 .social-media-nav {
     display: flex;
@@ -737,8 +738,12 @@ button {
 
     .review-container, .slide-content {
 		width: 100%;
-	}
+    }
 
+    .social-media-nav .nav-link {
+       font-size: 0.9em;
+    }
+	
     .social-media-nav .nav-link .rotating-link {
         text-decoration: underline;
     }
