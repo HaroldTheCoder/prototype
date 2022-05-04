@@ -1,6 +1,5 @@
 
 // Mobile navigation function 
-
 const navbar = document.querySelector('#mobile-navbar');
 const navButton = document.querySelector('.nav-button');
 const buttonBar = document.querySelectorAll('.bar');
@@ -10,12 +9,15 @@ navButton.addEventListener('click', ()=> {
 
 	if(navbar.classList.contains('nav-active')) {
 		navbar.classList.remove('nav-active');
-		buttonBar.forEach((b)=> b.classList.remove('bar-active'))
+		buttonBar.forEach((b)=> b.classList.remove('bar-active'));
+		document.body.style.overflowY = "scroll";
 	} else {
 		navbar.classList.toggle('nav-active');
-	buttonBar.forEach((b)=> b.classList.toggle('bar-active'))
+		buttonBar.forEach((b)=> b.classList.toggle('bar-active'));
+		document.body.style.overflowY = "hidden";
 	}
 })
+
 
 // Reviews Slider
 const reviewSlider = document.querySelector(".slides-container");

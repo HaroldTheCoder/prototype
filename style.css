@@ -266,9 +266,10 @@ button {
 }
 
 #mobile-navbar.nav-active {
+    position: fixed;
     right: 0;
-    
 }
+
 
 /* Hero style */
 #hero {
@@ -336,8 +337,6 @@ button {
     padding: 5em 0;
 }
 
-
-
 #projects header {
     text-align: center;
     padding: 0 0 5em;
@@ -369,7 +368,6 @@ button {
     width: 100%;
 }
 
-
 /* The Lab style */
 #the-lab {
     display: flex;
@@ -380,8 +378,8 @@ button {
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-
 }
+
 
 /* Testimonials style */
 #testimonials{
@@ -489,7 +487,6 @@ button {
 /* Contact style */
 #contact {
     padding: 7em 0;
-   
 }
 
 #contact h2 {
