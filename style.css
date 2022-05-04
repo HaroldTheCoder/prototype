@@ -11,9 +11,9 @@
 body {
     background-color: #020202;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 1.5px; 
+    letter-spacing: 1.5px;
+    
 }
-
 #page-container {
     position: relative;
   overflow: hidden;
@@ -43,7 +43,7 @@ h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, 
 .logo-link, .nav-link,
-.author, .fa-star, .controls, .icon-container a{ 
+.author, .fa-star, .controls, .card-name{ 
     color: #fff; 
 }
 
@@ -159,14 +159,14 @@ button {
 /* Top Header - Navbar Style */
 #main-header {
     padding: 3em 0 1em;
-    z-index: 6;
+    z-index: 5;
 }
 
 #main-navbar {
     overflow-x: hidden;
 }
 .logo-wrapper {
-    z-index: 7;
+    z-index: 11;
 }
 
 .nav-container, .navigation {
@@ -184,11 +184,10 @@ button {
     display: flex;
     flex-direction: column;
     padding: 1em 0;
-    position: relative;
     overflow: hidden;
 }
 
-.navigation .nav-link {
+.navigation .nav-link, .social-media-nav .nav-link {
     position: relative;
 }
 
@@ -202,8 +201,8 @@ button {
     position: absolute;
     top: 0;
     transition: 
-        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.2s, 
-        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.2s;
+        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s, 
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s;
 }
 
 .rotating-link:nth-child(1) {
@@ -225,6 +224,7 @@ button {
     text-decoration: underline;
 }
 
+
 /* Mobile navigation */
 #mobile-navbar {
     position: absolute;
@@ -234,7 +234,7 @@ button {
     height: 100vh;
     background-color: #fff;
     padding: 2em;
-    z-index: 5;
+    z-index: 10;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -262,7 +262,6 @@ button {
 .nav-button {
     position: relative;
     height: 30px;
-    z-index: 7;
 }
 
 .bar {
@@ -398,7 +397,10 @@ button {
     justify-content: center;
     align-items: center;
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(images/Phone\ and\ Tablet\ Mockup\ for\ Promo\ Fashion\ Instagram\ Post.svg) no-repeat center center;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), 
+        url(images/Phone\ and\ Tablet\ Mockup\ for\ Promo\ Fashion\ Instagram\ Post.svg) 
+        no-repeat center center;
     background-size: cover;
     text-align: center;
 }
@@ -505,7 +507,6 @@ button {
 
 #bullets li.selected {
 	background-color: #ccc;
-	border-color: #ccc;
 }
 
 
@@ -555,17 +556,15 @@ button {
     background-size: cover;
     background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
 }
-
-.icon-container {
+.social-media-nav {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
-    text-align: left;
     gap: 1.5em;
 }
 
-.icon-container a {
-    text-decoration: underline;
-}
+
 
 
 /* Footer style */
@@ -740,5 +739,8 @@ button {
 		width: 100%;
 	}
 
+    .social-media-nav .nav-link .rotating-link {
+        text-decoration: underline;
+    }
 
 }
