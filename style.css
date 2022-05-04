@@ -505,6 +505,7 @@ button {
 
 #bullets li.selected {
 	background-color: #ccc;
+	border-color: #ccc;
 }
 
 
