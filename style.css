@@ -415,8 +415,6 @@ button {
 .review-container {
     padding: 3em 0;
     overflow: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
 }
 
 .slide-background {
@@ -740,14 +738,5 @@ button {
 		width: 100%;
 	}
 
-    .slide {
-        scroll-snap-align: start;
-    }
-
-    .review-container {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
 
 }
