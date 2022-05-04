@@ -201,8 +201,8 @@ button {
     position: absolute;
     top: 0;
     transition: 
-        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s, 
-        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s;
+        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.2s, 
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.2s;
 }
 
 .rotating-link:nth-child(1) {
