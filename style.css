@@ -22,7 +22,7 @@ body {
 }
 
 h1 { 
-    font-size: 4.5em;
+    font-size: 5em;
  }
 
 h2 { 
@@ -31,6 +31,10 @@ h2 {
 
 h3 {
     font-size: 1.2em;
+}
+
+.hero-title p, #contact header p {
+    font-size: 1.3em;
 }
 
 h1, h2 { 
@@ -746,7 +750,11 @@ button {
 @media screen and (max-width: 400px) {
 
     h1, #contact h2 {
-        font-size: 2em;
+        font-size: 2.1em;
+    }
+
+    .hero-title p, #contact header p {
+    font-size: 1.15em;
     }
 
     h2{
