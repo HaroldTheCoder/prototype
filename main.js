@@ -6,7 +6,8 @@ const buttonBar = document.querySelectorAll('.bar');
 const navMobile = document.querySelector('.navigation-mobile');
 const linkMobile = document.querySelectorAll('.navigation-mobile .nav-item');
 const contactNav = document.querySelector('.contact-info');
-const socialLinkBlock = document.querySelector('.social-media-nav-mobile')
+const socialLinkBlock = document.querySelector('.social-media-nav-mobile');
+const mainContent = document.querySelector('#main-content');
 
 navButton.addEventListener('click', () => {
 	
@@ -17,7 +18,7 @@ navButton.addEventListener('click', () => {
 		socialLinkBlock.classList.remove('fade-up');
 		buttonBar.forEach((b)=> b.classList.remove('bar-active'));
 		linkMobile.forEach((l)=> l.classList.remove('fade-up'));
-        document.body.style.position = 'static'
+        mainContent.style.position = 'static'
 	} else {
 		navbar.classList.toggle('nav-active');
 		navMobile.classList.toggle('fade-up');
@@ -25,8 +26,8 @@ navButton.addEventListener('click', () => {
 		socialLinkBlock.classList.toggle('fade-up');
 		buttonBar.forEach((b)=> b.classList.toggle('bar-active'));
 		linkMobile.forEach((l)=> l.classList.toggle('fade-up'));
-        document.body.style.position = 'fixed';
-        document.body.style.width = "100%";
+        mainContent.style.position = 'fixed';
+        mainContent.style.width = "100%";
 
 	}
 })
