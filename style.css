@@ -16,9 +16,9 @@ body {
 }
 #page-container {
     position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 
 h1 { 
@@ -144,7 +144,7 @@ button {
     border: 1px solid #020202;
 }
 
-.secondary-button a {
+.secondary-button a, .contact-info p {
     color: #020202;
 }
 
@@ -236,13 +236,15 @@ button {
     padding: 2em;
     z-index: 10;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    gap: 3em;
     transition: right 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
 }
 
 .navigation-mobile {
+    padding-top: 5em;
     opacity: 0;
     margin-top: -50px;
     transition: 
@@ -288,19 +290,29 @@ button {
     transition: 
         animation ease 0.5s,
         opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.3s;
-
     
+}
+
+.navigation-mobile .nav-item:nth-child(4).fade-up {
+    animation: fade-up-third;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 200ms;
+    opacity: 1;
+    transition: 
+        animation ease 0.5s,
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.4s;  
 }
 
 .contact-info.fade-up {
     animation: fade-up-last;
     animation-duration: 1s;
     animation-timing-function: ease;
-    animation-delay: 250ms;
+    animation-delay: 300ms;
     transition: animation ease 0.5s;
     opacity: 1;
     transition: 
-        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.4s;
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.5s;
 }
 
 @keyframes fade-up-first {
@@ -359,16 +371,20 @@ button {
 
 
 .navigation-mobile .nav-link {
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 
-.navigation-mobile a {
+.navigation-mobile a, .social-media-nav-mobile .nav-item .nav-link {
     color:#020202;
-
 }
 
-.navigation-mobile-wrapper p{
+.social-media-nav-mobile .nav-item {
+    padding: 0.3em 0;
+    text-decoration: underline;
+}
+
+.navigation-mobile-wrapper p {
     padding: 0;
     color: #020202;
 }
