@@ -236,7 +236,7 @@ button {
     padding: 2em;
     z-index: 10;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
     align-items: flex-start;
     transition: right 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
@@ -359,7 +359,7 @@ button {
 
 
 .navigation-mobile .nav-link {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 
