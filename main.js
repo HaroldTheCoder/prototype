@@ -3,18 +3,28 @@
 const navbar = document.querySelector('#mobile-navbar');
 const navButton = document.querySelector('.nav-button');
 const buttonBar = document.querySelectorAll('.bar');
+const navMobile = document.querySelector('.navigation-mobile');
+const linkMobile = document.querySelectorAll('.navigation-mobile .nav-item');
+const contactNav = document.querySelector('.contact-info');
 
 navButton.addEventListener('click', () => {
 	
 	if(navbar.classList.contains('nav-active')) {
 		navbar.classList.remove('nav-active');
-		buttonBar.forEach((b) => b.classList.remove('bar-active'));
+		navMobile.classList.remove('fade-up');
+		contactNav.classList.remove('fade-up');
+		buttonBar.forEach((b)=> b.classList.remove('bar-active'));
+		linkMobile.forEach((l)=> l.classList.remove('fade-up'));
         document.body.style.position = 'static'
 	} else {
 		navbar.classList.toggle('nav-active');
+		navMobile.classList.toggle('fade-up');
+		contactNav.classList.toggle('fade-up');
 		buttonBar.forEach((b)=> b.classList.toggle('bar-active'));
-         document.body.style.position = 'fixed';
-         document.body.style.width = "100%";
+		linkMobile.forEach((l)=> l.classList.toggle('fade-up'));
+        document.body.style.position = 'fixed';
+        document.body.style.width = "100%";
+
 	}
 })
 
@@ -63,4 +73,4 @@ const autoSlider = () => {
     }
 }
 
-setInterval(autoSlider, 8000);
+setInterval(autoSlider, 9000);

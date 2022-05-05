@@ -241,13 +241,127 @@ button {
     align-items: flex-start;
     transition: right 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
 }
+
+.navigation-mobile {
+    opacity: 0;
+    margin-top: -50px;
+    transition: 
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.2s,
+        margin-top cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.2s ;
+}
+
+.contact-info {
+    opacity: 0;
+    padding:0;
+}
+
+.fade-up {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.navigation-mobile .nav-item:nth-child(1).fade-up {
+    animation: fade-up-first;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    transition: animation ease 0.5s;
+
+}
+
+.navigation-mobile .nav-item:nth-child(2).fade-up {
+    animation: fade-up-second;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 50ms;
+    opacity: 1;
+    transition: 
+        animation ease 0.5s,
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.2s;
+}
+
+.navigation-mobile .nav-item:nth-child(3).fade-up {
+    animation: fade-up-third;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 150ms;
+    opacity: 1;
+    transition: 
+        animation ease 0.5s,
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.3s;
+
+    
+}
+
+.contact-info.fade-up {
+    animation: fade-up-last;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 250ms;
+    transition: animation ease 0.5s;
+    opacity: 1;
+    transition: 
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.4s;
+}
+
+@keyframes fade-up-first {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up-second {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up-third {
+   0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-up-last {
+   0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 .navigation-mobile .nav-link {
     font-size: 2em;
 }
 
-.contact-info {
-    padding:0;
-}
 
 .navigation-mobile a {
     color:#020202;
@@ -507,7 +621,6 @@ button {
 
 #bullets li.selected {
 	background-color: #ccc;
-	border-color: #ccc;
 }
 
 
@@ -738,12 +851,11 @@ button {
 
     .review-container, .slide-content {
 		width: 100%;
-    }
+	}
 
     .social-media-nav .nav-link {
        font-size: 0.9em;
     }
-	
     .social-media-nav .nav-link .rotating-link {
         text-decoration: underline;
     }
