@@ -144,7 +144,7 @@ button {
     border: 1px solid #020202;
 }
 
-.secondary-button a, .contact-info p {
+.secondary-button a, .contact-info p, .social-media-nav-mobile a {
     color: #020202;
 }
 
