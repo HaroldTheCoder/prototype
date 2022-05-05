@@ -417,7 +417,7 @@ button {
 }
 
 .bar {
-    height: 2px;
+    height: 2.5px;
     width: 100%;
     margin: 25% 0;
     background-color: #fff;
@@ -435,8 +435,8 @@ button {
 }
 
 .bar:nth-child(1).bar-active {
-    transform: rotate(42deg);
-				top: 7px;
+    transform: rotate(41deg);
+				top: 6px;
                 background-color: #020202;
 }
 
