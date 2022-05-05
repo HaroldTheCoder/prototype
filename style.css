@@ -750,11 +750,11 @@ button {
 @media screen and (max-width: 400px) {
 
     h1, #contact h2 {
-        font-size: 2.1em;
+        font-size: 3em;
     }
 
     .hero-title p, #contact header p {
-    font-size: 1.15em;
+    font-size: 1.10em;
     }
 
     h2{
@@ -793,11 +793,11 @@ button {
 }
 
     #hero {
-        padding: 5em 0 7em 0;
+        padding: 6em 0 0em 0;
         height: 70vh;
     }
 
-    #hero, #contact {
+     #contact {
         padding: 5em 0;
     }
 
