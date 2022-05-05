@@ -201,8 +201,8 @@ button {
     position: absolute;
     top: 0;
     transition: 
-        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s, 
-        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.3s;
+        transform cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.2s, 
+        opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.1s;
 }
 
 .rotating-link:nth-child(1) {
@@ -607,43 +607,11 @@ button {
     text-align: center;
     padding: 1em;
 }
+
 .slide-content {
-    width: 80%;
+    width: 90%;
     z-index: 1;
     position: relative;
-}
-
-#controls {
-	width: 65%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.controls {
-	width: 50px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.5em;
-	cursor: pointer;
-    opacity: 0.6;
-}
-
-.controls span {
-    font-size: 0.6em;
-}
-
-.controls:hover {
-    transition: opacity ease 0.2s;
-    opacity: 1;
 }
 
 #bullets {
@@ -655,11 +623,11 @@ button {
 
 #bullets li {
 	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border: 1px solid  #444;
-    border-radius: 0.05em;
+	width: 40px;
+	height: 2px;
+	background-color:  #444;
 	margin: 0 5px;
+    cursor: pointer;
 }
 
 #bullets li.selected {
@@ -728,6 +696,7 @@ button {
 #main-footer {
     padding: 2em;
     text-align: center;
+    
 }
 
 .credit {
