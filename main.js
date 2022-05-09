@@ -56,18 +56,6 @@ document.querySelectorAll("#bullets li").forEach((bullets, ind) => {
 	});
 });
 
-next.addEventListener("click", () => {
-	slideIndex = slideIndex < 2 ? slideIndex + 1 : 2;
-	setIndex();
-	bullet.children[slideIndex].classList.add("selected");
-});
-
-prev.addEventListener("click", (e) => {
-	slideIndex = slideIndex > 0 ? slideIndex - 1 : 0;
-	setIndex();
-	bullet.children[slideIndex].classList.add("selected");
-});
-
 
 const autoSlider = () => {
 
