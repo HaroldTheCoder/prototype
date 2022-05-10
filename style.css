@@ -33,6 +33,10 @@ h3 {
     font-size: 1.2em;
 }
 
+#projects h3 {
+   font-size: 1.5em;
+}
+
 .hero-title p, #contact header p {
     font-size: 1.3em;
 }
@@ -553,19 +557,63 @@ button {
 }
 
 /* The Lab style */
-#the-lab {
+#benefits{
+   background-color: #f9f9f9;
+   padding: 5em 0;
+}
+#benefits .section-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 40vh;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), 
-        url(images/Phone\ and\ Tablet\ Mockup\ for\ Promo\ Fashion\ Instagram\ Post.svg) 
-        no-repeat center center;
-    background-size: cover;
-    text-align: center;
+    flex-direction: row;
+    gap: 5em;
 }
 
+#benefits .section-content-left,
+#benefits .section-content-right  {
+  width: 60%;
+}
+
+#benefits .section-content-right  {
+  width: 40%;
+}
+
+.section-content-right .benefit-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  font-size: 30px;
+  padding: 0 0 1em 0;
+}
+
+#benefits .section-button {
+    width: 25%;
+}
+
+#benefits header {
+    text-align: left;
+}
+
+#benefits h2, #benefits h3, #benefits h4{
+    color: #020202;
+}
+
+#benefits h3 {
+  font-size: 2.5em;
+  color: #a7a7a7;
+}
+
+
+#benefits .lead {
+    color: #252525
+}
+
+.benefit-text {
+    color: #5e5e5e;
+    width: 90%;
+}
 
 /* Testimonials style */
 #testimonials{
@@ -583,7 +631,7 @@ button {
 
 .slide-background {
     width: 50%;
-    height: 30vh;
+    height: 27vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -683,7 +731,7 @@ button {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
+    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpeg);
 }
 .social-media-nav {
     display: flex;
