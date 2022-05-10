@@ -595,6 +595,10 @@ button {
     text-align: left;
 }
 
+#benefits h2 {
+    font-weight: 400;
+}
+
 #benefits h2, #benefits h3, #benefits h4{
     color: #020202;
 }
