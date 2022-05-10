@@ -570,11 +570,11 @@ button {
 }
 
 #benefits .section-content-left  {
-  width: 60%;
+  width: 50%;
 }
 
 #benefits .section-content-right  {
-  width: 40%;
+  width: 50%;
 }
 
 .section-content-right .benefit-box {
@@ -584,11 +584,11 @@ button {
   flex-direction: row;
   gap: 1em;
   font-size: 30px;
-  padding: 0 0 1em 0;
+  padding: 1em 0 1em 0;
 }
 
 #benefits .section-button {
-    width: 25%;
+    width: 35%;
 }
 
 #benefits header {
@@ -601,7 +601,14 @@ button {
 
 #benefits h3 {
   font-size: 2.5em;
-  color: #a7a7a7;
+  color: #d5d5d5;
+  font-weight: 500;
+}
+
+.benefit-box:nth-child(1),
+.benefit-box:nth-child(2),
+.benefit-box:nth-child(3) {
+    border-bottom: 2px solid #bbbbbb;
 }
 
 
@@ -611,7 +618,6 @@ button {
 
 .benefit-text {
     color: #5e5e5e;
-    width: 90%;
 }
 
 /* Testimonials style */
