@@ -569,8 +569,7 @@ button {
     gap: 5em;
 }
 
-#benefits .section-content-left,
-#benefits .section-content-right  {
+#benefits .section-content-left  {
   width: 60%;
 }
 
@@ -731,7 +730,7 @@ button {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpg);
+    background-image: url(images/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.jpeg);
 }
 .social-media-nav {
     display: flex;
@@ -809,6 +808,18 @@ button {
         font-size: 1.5em;
     }
 
+    #benefits h3 {
+        font-size: 1.5em;
+        display: block;
+
+    }
+
+     #benefits h4 {
+        font-size: 0.75em;
+    }
+
+
+
     .button-mobile, .project-header-mobile, .navigation-mobile {
         display: block;
     }
@@ -816,8 +827,18 @@ button {
     .slide-background {
         display: none;
     }
-    #controls {
+    #controls, #benefits .section-content-left,
+    #benefits .section-content-right, 
+    .benefit-text {
         width: 100%; 
+    }
+
+    #benefits, #benefits header {
+        text-align: center;
+    }
+
+    #benefits .section-button {
+        width: 60%;
     }
 
     #controls img {
@@ -850,8 +871,14 @@ button {
     }
 
     .hero-container, .contact-wrapper,
-    .section-row-container, .icon-container {
+    .section-row-container, .icon-container, #benefits .section-wrapper,
+    .section-content-right .benefit-box  {
         flex-direction: column;
+    }
+
+    .section-content-right .benefit-box  {
+        gap: 0;
+        text-align: center;
     }
 
     .icon-container {
