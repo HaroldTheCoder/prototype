@@ -490,6 +490,7 @@ button {
     align-items: center;
 }
 
+
 /* About style */
 #about {
     padding: 5em 0;
@@ -612,7 +613,7 @@ button {
 .benefit-box:nth-child(1),
 .benefit-box:nth-child(2),
 .benefit-box:nth-child(3) {
-    border-bottom: 2px solid #bbbbbb;
+    border-bottom: 2px solid #ececec;
 }
 
 
