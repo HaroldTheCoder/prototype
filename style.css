@@ -817,7 +817,7 @@ button {
 
 /* Responsive mobile */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
     h1, #contact h2 {
         font-size: 2.1em;
@@ -982,8 +982,366 @@ button {
         text-decoration: underline;
     }
 
+}
+
+@media screen and  (min-width: 451px) and (max-width: 750px) {
+
+    h1, #contact h2 {
+        font-size: 2.1em;
+    }
+
+    .hero-title p, #contact header p {
+    font-size: 1.15em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    #benefits h3 {
+        font-size: 1.5em;
+        display: block;
+
+    }
+
+     #benefits h4 {
+        font-size: 0.75em;
+    }
 
 
+
+    .button-mobile, .project-header-mobile, .navigation-mobile {
+        display: block;
+    }
+    .navigation, .project-content,
+    .slide-background {
+        display: none;
+    }
+    #controls, #benefits .section-content-left,
+    #benefits .section-content-right, 
+    .benefit-text {
+        width: 100%; 
+    }
+
+    #benefits, #benefits header {
+        text-align: center;
+    }
+
+    #benefits .section-button {
+        width: 60%;
+    }
+
+    #controls img {
+        width: 22px;
+    }
+
+
+    #main-navbar, .section-wrapper {
+        width: 85%;
+    }
+
+    #main-navbar{
+        width: 85%;
+    }
+
+    #main-header {
+    padding: 1.5em 0 1.5em 0;
+   
+}
+
+    .nav-button {
+        width: 30px;
+        display: block;
+        z-index: 11;
+}
+
+    #hero {
+        padding: 6em 0 6em 0;
+        height: auto;
+    }
+
+    .hero-container{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+     #contact {
+        padding: 5em 0;
+    }
+
+    .hero-container, .contact-wrapper,
+    .section-row-container, .icon-container, #benefits .section-wrapper,
+    .section-content-right .benefit-box  {
+        flex-direction: column;
+    }
+
+    .section-content-right .benefit-box  {
+        gap: 0;
+        text-align: center;
+    }
+
+    .icon-container {
+        gap: 1em;
+    }
+
+    #testimonials {
+        padding: 2em 0;
+    }
+
+
+    .hero-right, .section-right, .section-left, .card-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2em 0 0 0;
+    }
+
+    .card-container {
+        text-align: left;
+    }
+
+    .row-box {
+        width: 100%;
+    }
+
+    .projects-container {
+        padding: 3em 0;
+    }
+
+    .projects-img {
+        width: 50%;
+    }
+
+    .project-media {
+        padding: 1em 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .button-mobile {
+        margin: auto;
+    }
+
+    .project-media .lead {
+        font-size: 2.5em;
+        font-weight: 700;
+        opacity: 0.3;
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .transition-container {
+        margin-top: -3%;
+    }
+
+    .review-container, .slides {
+        padding: 0;
+    }
+
+    .review-container, .slide-content {
+		width: 100%;
+	}
+
+    .social-media-nav .nav-link {
+       font-size: 0.9em;
+    }
+    .social-media-nav .nav-link .rotating-link {
+        text-decoration: underline;
+    }
+
+}
+
+@media screen and  (min-width: 751px) and (max-width: 1024px) {
+    h1, #contact h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-title p, #contact header p {
+        font-size: 1.25em;
+    }
+
+    h2{
+        font-size: 1.7em;
+    }
+
+    #benefits h3 {
+        font-size: 1.7em;
+        display: block;
+
+    }
+
+     #benefits h4 {
+        font-size: 0.95em;
+    }
+
+
+
+    .button-mobile, .project-header-mobile, .navigation-mobile {
+        display: block;
+    }
+    .navigation, .project-content,
+    .slide-background {
+        display: none;
+    }
+    #controls, #benefits .section-content-left,
+    #benefits .section-content-right, 
+    .benefit-text {
+        width: 100%; 
+    }
+
+    #benefits, #benefits header {
+        text-align: center;
+    }
+
+    #benefits .section-button {
+        width: 60%;
+    }
+
+    #controls img {
+        width: 22px;
+    }
+
+    #main-header {
+    padding: 1.5em 0 1.5em 0;
+   
+}
+
+    .nav-button {
+        width: 30px;
+        display: block;
+        z-index: 11;
+}
+
+    #hero {
+        padding: 6em 0 6em 0;
+    }
+
+    .hero-container{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+     #contact {
+        padding: 5em 0;
+    }
+
+    .hero-container, .contact-wrapper,
+    .section-row-container, .icon-container, #benefits .section-wrapper,
+    .section-content-right .benefit-box  {
+        flex-direction: column;
+    }
+
+    .section-content-right .benefit-box  {
+        gap: 0;
+        text-align: center;
+    }
+
+    .icon-container {
+        gap: 1em;
+    }
+
+    #testimonials {
+        padding: 2em 0;
+    }
+
+
+    .hero-right, .section-right, .section-left, .card-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2em 0 0 0;
+    }
+
+    .card-container {
+        text-align: left;
+    }
+
+    .row-box {
+        width: 100%;
+    }
+
+    .projects-container {
+        padding: 3em 0;
+    }
+
+    .projects-img {
+        width: 50%;
+    }
+
+    .project-media {
+        padding: 1em 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .button-mobile {
+        margin: auto;
+    }
+
+    .project-media .lead {
+        font-size: 2.5em;
+        font-weight: 700;
+        opacity: 0.3;
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .transition-container {
+        margin-top: -3%;
+    }
+
+    .review-container, .slides {
+        padding: 0;
+    }
+
+    .review-container, .slide-content {
+		width: 100%;
+	}
+
+    .social-media-nav .nav-link {
+       font-size: 0.9em;
+    }
+    .social-media-nav .nav-link .rotating-link {
+        text-decoration: underline;
+    }
+
+
+}
+
+@media screen and  (min-width: 1025px) and (max-width: 1112px)  {
+     #benefits .section-button {
+        width: 70%;
+    }
+
+}
+
+@media screen and  (min-width: 1950px) {
+    #main-navbar, .section-wrapper {
+        width: 60%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .hero-title p, #contact header p {
+        font-size: 1.5em;
+    }
+
+    #main-header .logo-link img{
+        width: 50%;
+    }
 
 
 }

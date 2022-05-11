@@ -1,7 +1,5 @@
 
 
-
-
 // Fixed Header-Navbar function
 const topHeader = document.querySelector('#main-header');
 const navLink = document.querySelectorAll('#main-header .nav-link');
