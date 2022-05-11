@@ -4,7 +4,7 @@
     padding: 0;
 }
 #main-navbar, .section-wrapper {
-    width: 77%;
+    width: 75%;
     margin: auto;
 }
 /* General styles - Fonts, Colors, ect. */
@@ -23,7 +23,6 @@ body {
 
 h1 { 
     font-size: 5em;
-    width: 65%;
  }
 
 h2 { 
@@ -165,22 +164,12 @@ button {
     display: none;
 }
 
-#main-header.hidden, .hero-title p.hidden, .hero-title button.hidden {
-    opacity: 1;
-    transition: opacity ease 1s 2s;
-}
-
-.hero-title p, .hero-title button {
-    opacity: 0;
-}
-
 /* Top Header - Navbar Style */
 #main-header {
     padding: 2em 0 2em;
     z-index: 5;
-   height: 10vh;
+    height: 10vh;
     background-color: #020202;
-    opacity: 0;
 }
 
 #main-navbar {
@@ -839,7 +828,6 @@ button {
         font-size: 2.1em;
     }
 
-
     .hero-title p, #contact header p {
     font-size: 1.15em;
     }
@@ -869,7 +857,7 @@ button {
     .slide-background {
         display: none;
     }
-    h1, #controls, #benefits .section-content-left,
+    #controls, #benefits .section-content-left,
     #benefits .section-content-right, 
     .benefit-text {
         width: 100%; 
@@ -893,12 +881,15 @@ button {
     }
 
     #main-navbar {
-        height: auto;
+    }
+
+    #hero {
+        height: 80vh;
     }
 
     #main-header {
     padding: 1.5em 0 1.5em;
-    height: 70vh;
+ 
    
 }
 

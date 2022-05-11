@@ -41,35 +41,6 @@ navButton.addEventListener('click', () => {
 	}
 })
 
-const title = document.querySelector("h1");
-const titleLead = document.querySelector('.hero-title p');
-const heroButton = document.querySelector('.hero-title button');
-
-function typingEffect(element, speed, fadeIn) {
-    let text= element.innerHTML;
-    element.innerHTML="";
-    var i= 0;
-    var timer = setInterval(function() {
-        if(i < text.length) {
-            element.append(text.charAt(i))
-            i++;
-        }else {
-            clearInterval(timer);
-        }
-    }, speed)
-
-}
-typingEffect(title, 50);
-
-
-
-const fadeIn = ()=> {
-		topHeader.classList.add('hidden');
-		titleLead.classList.add('hidden');
-		heroButton.classList.add('hidden');
-}
-fadeIn();
-
 
 
 // Reviews Slider
