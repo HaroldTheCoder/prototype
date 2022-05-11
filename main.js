@@ -1,8 +1,14 @@
+// Fixed Header-Navbar function
+const topHeader = document.querySelector('#main-header');
+const navLink = document.querySelectorAll('#main-header .nav-link');
+const navLogo = document.querySelector('.logo-link img');
+const buttonBar = document.querySelectorAll('.bar');
+
+
 
 // Mobile navigation function 
 const navbar = document.querySelector('#mobile-navbar');
 const navButton = document.querySelector('.nav-button');
-const buttonBar = document.querySelectorAll('.bar');
 const navMobile = document.querySelector('.navigation-mobile');
 const linkMobile = document.querySelectorAll('.navigation-mobile .nav-item');
 const contactNav = document.querySelector('.contact-info');
@@ -43,7 +49,6 @@ let slideIndex = 0;
 
 
 const setIndex = () => {
-
 	document.querySelector("#bullets .selected").classList.remove("selected");
 	reviewSlider.style.transform = `translate(${slideIndex * -33.33}%)`;
 }
@@ -55,7 +60,6 @@ document.querySelectorAll("#bullets li").forEach((bullets, ind) => {
 		bullets.classList.add("selected");
 	});
 });
-
 
 const autoSlider = () => {
 
