@@ -476,7 +476,7 @@ button {
 
 .bar:nth-child(1).bar-active {
     transform: rotate(43deg);
-				top: 7px;
+				top: 8px;
                 background-color: #020202;
 }
 
