@@ -601,6 +601,7 @@ button {
   gap: 1em;
   font-size: 1.5em;
   padding: 0.5em 0 0.5em 0;
+  border-bottom: 2px solid #ececec;
 }
 
 #benefits .section-button {
@@ -623,12 +624,6 @@ button {
   font-size: 2.5em;
   color: #d5d5d5;
   font-weight: 500;
-}
-
-.benefit-box:nth-child(1),
-.benefit-box:nth-child(2),
-.benefit-box:nth-child(3) {
-    border-bottom: 2px solid #ececec;
 }
 
 
@@ -880,9 +875,6 @@ button {
         width: 80%;
     }
 
-    #main-navbar {
-    }
-
     #hero {
         height: 80vh;
     }
@@ -990,19 +982,7 @@ button {
         text-decoration: underline;
     }
 
-    .section-content-right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        gap: 2em;
-}
 
-    .section-content-right .benefit-box {
-    border: 2px solid #ececec;
-     width: 100%;
-    }
 
 
 
