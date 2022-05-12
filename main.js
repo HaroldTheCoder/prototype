@@ -1,14 +1,5 @@
-
-
-// Fixed Header-Navbar function
 const topHeader = document.querySelector('#main-header');
-const navLink = document.querySelectorAll('#main-header .nav-link');
-const navLogo = document.querySelector('.logo-link img');
 const buttonBar = document.querySelectorAll('.bar');
-
-
-
-// Mobile navigation function 
 const navbar = document.querySelector('#mobile-navbar');
 const navButton = document.querySelector('.nav-button');
 const navMobile = document.querySelector('.navigation-mobile');
@@ -16,6 +7,8 @@ const linkMobile = document.querySelectorAll('.navigation-mobile .nav-item');
 const contactNav = document.querySelector('.contact-info');
 const socialLinkBlock = document.querySelector('.social-media-nav-mobile');
 
+
+// Mobile navigation function 
 navButton.addEventListener('click', () => {
 	
 	if(navbar.classList.contains('nav-active')) {
@@ -37,9 +30,7 @@ navButton.addEventListener('click', () => {
         document.body.style.width = "100%";
 
 	}
-})
-
-
+});
 
 // Reviews Slider
 const reviewSlider = document.querySelector(".slides-container");

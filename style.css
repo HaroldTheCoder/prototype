@@ -22,7 +22,13 @@ body {
 }
 
 h1 { 
-    font-size: 5em;
+    font-size: 4em;
+ 
+ }
+
+ h1 span {
+     font-weight: 700;
+     font-size: 1.15em;
  }
 
 h2 { 
@@ -49,7 +55,7 @@ h3, h4, h5, h6 {
     font-weight: 400; 
 }
 
-h1, h2, h3, h4, h5, h6, 
+ h1, h2, h3, h4, h5, h6, 
 .logo-link, .nav-link,
 .author, .fa-star, .controls, .card-name{ 
     color: #fff; 
@@ -76,7 +82,7 @@ a {
 
 .lead { 
     color: #fff;
-    opacity: 0.7; 
+    opacity: 0.9; 
 }
 
 .socialmedia-icon:hover { 
@@ -501,6 +507,24 @@ button {
     justify-content: center;
     align-items: center;
 }
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-right img {
+   width: 80%;
+}
+
+.hero-right {
+    width: 35%;
+    text-align: end;
+}
+.hero-left {
+    width: 65%;
+}
+
+
 
 /* About style */
 #about {
@@ -508,6 +532,8 @@ button {
     text-align: center;
     background-color: #080808;
 }
+
+
 
 .section-header {
     padding: 2em 0;
@@ -568,9 +594,9 @@ button {
     width: 100%;
 }
 
-/* The Lab style */
+/* Benefits style */
 #benefits{
-   background-color: #f9f9f9;
+   background-color: #F7F8FA;
    padding: 5em 0;
 }
 #benefits .section-wrapper {
@@ -626,15 +652,19 @@ button {
   font-weight: 500;
 }
 
+#benefits h4 {
+    font-weight: 500;
+}
 
 #benefits .lead {
     font-size: 1.2em;
     color: #020202;
     opacity: 1;
+    font-weight: 500;
 }
 
 .benefit-text {
-    color: #5e5e5e;
+    color: #252525;
 }
 
 /* Testimonials style */
@@ -823,6 +853,11 @@ button {
         font-size: 2.1em;
     }
 
+    h1 span {
+     font-weight: 700;
+     font-size: 1em;
+ }
+
     .hero-title p, #contact header p {
     font-size: 1.15em;
     }
@@ -854,7 +889,7 @@ button {
     }
     #controls, #benefits .section-content-left,
     #benefits .section-content-right, 
-    .benefit-text {
+    .benefit-text, .hero-title p, .hero-left, .hero-right {
         width: 100%; 
     }
 
@@ -877,6 +912,18 @@ button {
 
     #hero {
         height: 80vh;
+    }
+
+    #hero {
+        position: relative;
+    }
+
+    .hero-right img {
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        transform: translate(-20%, -50%);
+        opacity: 0.2;
     }
 
     #main-header {
@@ -991,7 +1038,7 @@ button {
     }
 
     .hero-title p, #contact header p {
-    font-size: 1.15em;
+        font-size: 1.05em;
     }
 
     h2{
@@ -1019,7 +1066,7 @@ button {
     }
     #controls, #benefits .section-content-left,
     #benefits .section-content-right, 
-    .benefit-text {
+    .benefit-text, .hero-title p, .hero-left, .hero-right {
         width: 100%; 
     }
 
@@ -1058,6 +1105,17 @@ button {
     #hero {
         padding: 6em 0 6em 0;
         height: auto;
+        position: relative;
+    }
+
+
+    .hero-right img {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        transform: translate(-10%, -50%);
+        opacity: 0.2;
+        width: 40%;
     }
 
     .hero-container{
@@ -1160,7 +1218,7 @@ button {
     }
 
     .hero-title p, #contact header p {
-        font-size: 1.45em;
+        font-size: 1.25em;
     }
 
     h2{
@@ -1188,7 +1246,7 @@ button {
     }
     #controls, #benefits .section-content-left,
     #benefits .section-content-right, 
-    .benefit-text {
+    .benefit-text, .hero-left, .hero-right {
         width: 100%; 
     }
 
@@ -1217,6 +1275,17 @@ button {
 
     #hero {
         padding: 6em 0 6em 0;
+        position: relative;
+    }
+
+
+    .hero-right img {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        transform: translate(-10%, -50%);
+        opacity: 0.2;
+        width: 40%;
     }
 
     .hero-container{
