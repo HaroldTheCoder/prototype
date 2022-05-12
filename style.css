@@ -923,7 +923,7 @@ button {
         top: 50%;
         left: -20%;
         transform: translate(-20%, -50%);
-        opacity: 0.2;
+        opacity: 0.6;
     }
 
     #main-header {
@@ -1114,7 +1114,7 @@ button {
         top: 50%;
         left: -10%;
         transform: translate(-10%, -50%);
-        opacity: 0.2;
+        opacity: 0.6;
         width: 40%;
     }
 
@@ -1284,7 +1284,7 @@ button {
         top: 50%;
         left: -10%;
         transform: translate(-10%, -50%);
-        opacity: 0.2;
+        opacity: 0.6;
         width: 40%;
     }
 
